@@ -23,7 +23,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting()
+                    LongText()
                 }
             }
         }
@@ -34,7 +34,7 @@ val longText = "あのイーハトーヴォのすきとおった風、夏でも�
 val shortText = "Windowsでコンピューターの世界が広がります。1234567890"
 
 @Composable
-fun Greeting() {
+fun LongText() {
     Text(text = longText)
 }
 
@@ -42,6 +42,6 @@ fun Greeting() {
 @Composable
 fun DefaultPreview() {
     Compose_layout_and_measure_testTheme {
-        Greeting()
+        LongText()
     }
 }

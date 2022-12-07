@@ -47,7 +47,7 @@ fun Screen(modifier: Modifier = Modifier) {
         Spacer(modifier = Modifier.height(4.dp))
         Text(text = authorText)
         Spacer(modifier = Modifier.height(12.dp))
-        LongText(
+        ExpandableText(
             modifier = Modifier
                 .border(1.dp, color = Color.Gray)
                 .padding(8.dp),
@@ -57,7 +57,7 @@ fun Screen(modifier: Modifier = Modifier) {
 }
 
 @Composable
-fun LongText(modifier: Modifier = Modifier, text: String) {
+fun ExpandableText(modifier: Modifier = Modifier, text: String) {
     Text(modifier = modifier, text = text)
 }
 
